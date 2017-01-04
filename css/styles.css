@@ -1,0 +1,309 @@
+/*Base*/
+
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Molengo', sans-serif;
+    font-weight: bold;
+    background: url('../img/natural_paper.png');
+
+    /*Add ligatures to font style*/
+
+    font-feature-settings: "kern", "liga";
+    -moz-font-feature-settings: "kern", "liga";
+    -moz-font-feature-settings: "kern=1", "liga=1";
+    -ms-font-feature-settings: "kern", "liga";
+    -o-font-feature-settings: "kern", "liga";
+    -webkit-font-feature-settings: "kern", "liga";
+}
+.app__div--container {
+    width: 90%;
+}
+h1,
+.app__div--container,
+.header__p--grabber {
+    margin: 0 auto;
+}
+h1, legend,
+.header__p--grabber,
+#submit {
+    font-family: 'Special Elite', cursive;
+}
+legend,
+.header__p--grabber,
+#submit{
+    font-size: 2em;
+}
+legend,
+.header__p--grabber {
+    font-weight: 700;
+}
+.contact__div--checkboxDiv,
+.contact__div--radioDiv,
+.contact__div--blackLine,
+input,
+textarea,
+select,
+#submit {
+    width: 100%;
+}
+
+/*Header Content*/
+
+h1,
+.header__p--grabber,
+.header__strong--header-title,
+.header__p--headerContent {
+    text-align: center;
+}
+h1 {
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+    font-weight: 400;
+}
+.header__p--grabber {
+    color: #000;
+    padding: .5em 0 .2em 0 ;
+}
+.header__div--blackLineOne {
+    border-bottom: 3px solid #000;
+}
+.header__div--blackLineTwo{
+    margin: .2em 0 0 0;
+    border-top: 1px solid #000;
+}
+.header__p--headerContent {
+    margin: 0 0 .8em 0;
+}
+
+/*Contact Content*/
+
+fieldset {
+    border: 0;
+}
+legend {
+    padding: 1em 0;
+}
+label,
+[name="titleFormat"] {
+    display: inline-block;
+}
+label,
+p {
+    color: #222;
+}
+label {
+    margin: 1em 0;
+}
+input,
+keygen,
+select,
+select[size="0"],
+select[size="1"] {
+    border: none;
+}
+input,
+textarea,
+select {
+    background-color: #dcdcdc;
+    border-radius: 5px;
+    border: 1px solid #888;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    transition: all .5s ease-out
+}
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: #fff;
+}
+[type="checkbox"],
+[type="radio"] {
+    width: auto;
+    margin: 0 1em 0 0;
+}
+
+#mrRadioButton,
+#mrsRadioButton,
+#msRadioButton {
+    position: relative;
+    top: .1em;
+}
+#mrRadioButton,
+#msRadioButton {
+    margin: 0 0 0 .6em;
+}
+#mrsRadioButton {
+    margin: 0 0 0 .2em;
+}
+#zipCode {
+    width: 95%;
+    margin: 0 0 1em 0;
+}
+#submit {
+    background-color: #20BF9F;
+    color: #fff;
+    height: 3.5em;
+    margin: 2em 0 1em 0;
+    box-shadow: inset -.1em -.1em #666;
+}
+#submit:active {
+    box-shadow: inset .1em .1em #666;
+}
+#otherTopics {
+    height: 12em;
+}
+.contact__div--blackLine {
+    border: 1px solid #000;
+    height: .1em;
+    clear: both;
+}
+.contact__label--nameTitle {
+    margin: 0 0 1em 0;
+}
+.contact__input--inputHeight {
+    height: 5em;
+}
+::-webkit-input-placeholder {
+    text-align: right;
+    padding: 0 1em 0 0;
+}
+:-ms-input-placeholder {
+    text-align: right;
+    padding: 0 1em 0 0;
+}
+::-moz-placeholder {
+    text-align: right;
+}
+:-moz-placeholder {
+    text-align: right;
+}
+.contact__label--newsType,
+.contact__label--formatType {
+    margin: .5em 0 .5em 0;
+}
+.contact__label--fullblock {
+    width: 100%;
+}
+
+/*Footer Content*/
+
+.footer__p--footer-text {
+    text-align: center;
+    font-size: 1em;
+}
+
+@media screen and (min-width: 760px) {
+
+    .app__div--container,
+    input,
+    select {
+        width: 60%;
+    }
+
+    /*Header Content*/
+
+    #mrRadioButton,
+    #msRadioButton,
+    #mrsRadioButton {
+        margin: 0 0 0 .6em;
+    }
+
+    /*Contact Content*/
+
+    label {
+        float: left;
+        width: 5em;
+        margin: 2em 2.3em 1em 0;
+        color: #222;
+    }
+    input,
+    select {
+        background-color: #dcdcdc;
+        border-radius: 5px;
+    }
+    select {
+        margin: 2em 0 1.3em;
+    }
+    input,
+    #zipCode {
+        margin: 1em 0;
+    }
+    #zipCode {
+        width: 40%;
+    }
+    .contact__label--nameTitle {
+        margin: 0;
+        width: 2em;
+    }
+    .contact__option--chooseStateColor {
+        padding: 0 0 0 1em;
+    }
+    .contact__label--newsType,
+    .contact__label--formatType	{
+        width: 7em;
+        height: 1.1em;
+        margin: 0;
+    }
+    .contact__label--age,
+    .contact__label--selectState,
+    .contact__label--fullName,
+    .contact__label--email,
+    .contact__label--primary,
+    .contact__label--secondary,
+    .contact__label--address,
+    .contact__label--city,
+    .contact__label--zipCode {
+        position: relative;
+    }
+    .contact__label--fullName ,
+    .contact__label--zipCode,
+    .contact__label--age {
+        top: 2em;
+    }
+    .contact__label--primary,
+    .contact__label--secondary {
+        top: .9em;
+    }
+    .contact__label--email,
+    .contact__label--address {
+        top: 1.5em;
+    }
+    .contact__label--city {
+        top: 2em;
+    }
+    .contact__label--selectState {
+        top: 1.8em;
+    }
+    .contact__div--newsletterReceipt,
+    .contact__div--newsFormat,
+    .contact__label--fullblock{
+        width: 33.3em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    p {
+        margin: 0 0 1em 0;
+    }
+
+    /*Contact Content*/
+
+    .contact__div--newsFormat {
+        width: 30%;
+        float: right;
+        padding-left: 1em;
+    }
+    .contact__div--newsletterReceipt {
+        width: 70%;
+        float: left;
+        padding-bottom: 1em;
+    }
+    .contact__label--fullblock {
+        width: 100%;
+    }
+}
